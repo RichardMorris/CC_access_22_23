@@ -29,6 +29,22 @@ public class Character {
 
     }
 
+    /**
+     * Overridden version of the Object's toString method.
+     * An enxample of polymorphism.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return name + "\n" +
+                "health=" + health + '\n' +
+                ", attack=" + attack + '\n' +
+                ", defence=" + defence + '\n' +
+                ", speed=" + speed + '\n' +
+                ", size=" + size +
+                '}';
+    }
+
     public void dealDamage(Character c, int amount) {
         c.health -= amount;
     }

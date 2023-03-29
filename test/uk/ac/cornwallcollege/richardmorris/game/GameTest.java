@@ -10,6 +10,8 @@ public class GameTest {
     public void testCharacterCreation() {
         Character c1 = new Character(50,15, 20, 5, 1, "ZORRO");
 
+        System.out.println(c1.toString());
+
     }
 
     @Test
